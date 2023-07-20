@@ -1,0 +1,7 @@
+python: "3.8.10"
+build_dependencies:
+  - pip==20.3.3
+dependencies:
+  - protobuf==3.20.3
+  - pandas==1.2.3
+  - wandb==0.10.31

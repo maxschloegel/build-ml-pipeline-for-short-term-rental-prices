@@ -1,0 +1,12 @@
+python: "3.8.10"
+build_dependencies:
+  - pip==20.3.3
+dependencies:
+  - numpy==1.23.1
+  - protobuf==3.20.0
+  - pandas==1.1.4
+  - mlflow==1.14.1
+  - scikit-learn==0.24.1
+  - matplotlib==3.2.2
+  - pillow==8.1.2
+  - wandb==0.10.21

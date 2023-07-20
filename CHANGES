@@ -1,0 +1,4 @@
+config.yaml:
+  - changes `component_repository` from:
+    - `components_repository: "https://github.com/udacity/build-ml-pipeline-for-short-term-rental-prices#components"` to
+    - `components_repository: "https://github.com/maxschloegel/build-ml-pipeline-for-short-term-rental-prices#components"

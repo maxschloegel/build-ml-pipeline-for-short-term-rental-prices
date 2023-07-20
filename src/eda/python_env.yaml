@@ -1,0 +1,13 @@
+python: "3.8.10"
+build_dependencies:
+  - pip==23.1.2
+dependencies:
+  - tqdm==4.48.2
+  - numpy==1.23.5
+  - jupyterlab==3.0.12
+  - ipywidgets==8.0.7
+  - seaborn==0.11.1
+  - pandas==1.2.3
+  - ydata-profiling==4.3.1
+  - pyarrow==2.0
+  - wandb==0.10.31

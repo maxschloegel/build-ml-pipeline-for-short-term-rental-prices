@@ -1,5 +1,5 @@
 name: {{cookiecutter.step_name}}
-conda_env: conda.yml
+python_env: python_env.yaml
 
 entry_points:
   main:
