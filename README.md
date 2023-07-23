@@ -1,3 +1,56 @@
+# Submission Notes:
+
+## W&B Project:
+
+The public W&B project can be found here:
+
+- [https://wandb.ai/maxschloegel/nyc_airbnb](https://wandb.ai/maxschloegel/nyc_airbnb)
+
+
+## Github Repository:
+
+The public Github-repository that contains this code can be found here:
+
+- [https://github.com/maxschloegel/build-ml-pipeline-for-short-term-rental-prices/tree/main](https://github.com/maxschloegel/build-ml-pipeline-for-short-term-rental-prices/tree/main)
+
+
+## Link to the Graph View (up-to-date W&B calls it `Lineage`)
+
+Here is the link of the graph view for the production model:
+
+- [https://wandb.ai/maxschloegel/nyc_airbnb/artifacts/model_export/random_forest_export/v7/lineage](https://wandb.ai/maxschloegel/nyc_airbnb/artifacts/model_export/random_forest_export/v7/lineage)
+ 
+## Other important notes:
+
+1. Unfortunately I had issues with using `conda` and `conda.yaml`-files running on my local machine. This is why I used `pyenv` and `virtualenv`
+ and the corresponding `python_env.yaml`-files instead. I adjusted all MLProjects accordingly.
+
+ This also means that I was not able to use the official Github-repository in the `components`-section for steps:
+   - `data_split` and
+   - `test_regression_model`.
+
+I had to adjust in the `config.yaml`-file `config['main']['components_repository']` to my own version of it, to use `python_env.yaml`:
+
+```
+https://github.com/maxschloegel/build-ml-pipeline-for-short-term-rental-prices#components"
+```
+instead of 
+
+```
+https://github.com/udacity/build-ml-pipeline-for-short-term-rental-prices#components
+```
+
+Additionaly I had to update some of the code dependencies, because the `mlflow`-version in the tutorials and the given files did not support
+`python_env.yaml`-files well enough.
+
+
+2. I had issues getting the `pandas-profiling` library running in the EDA-step, so I skipped this part. I tried my best to make it work
+(I also tried `ydata_profiling`, which also did not work)
+
+-----
+# Original Instructions:
+-----
+
 # Build an ML Pipeline for Short-Term Rental Prices in NYC
 You are working for a property management company renting rooms and properties for short periods of 
 time on various rental platforms. You need to estimate the typical price for a given property based 
