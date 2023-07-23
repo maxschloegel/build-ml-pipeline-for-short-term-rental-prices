@@ -32,7 +32,7 @@ Here is the link of the graph view for the production model:
 I had to adjust in the `config.yaml`-file `config['main']['components_repository']` to my own version of it, to use `python_env.yaml`:
 
 ```
-https://github.com/maxschloegel/build-ml-pipeline-for-short-term-rental-prices#components"
+https://github.com/maxschloegel/build-ml-pipeline-for-short-term-rental-prices#components
 ```
 instead of 
 
